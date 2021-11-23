@@ -1,0 +1,56 @@
+<!doctype html>
+<title>Avengers|Marvels</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #d8e5e6;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: rgba(243, 53, 5, 0.61);
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <header> <big> AVENGERS </big><br>
+    Earth's Mightiest Heroes stand as the planet's first line of defense against the most powerful threats in the universe.</header>
+  <div id="main">
+    <article>THE AVENGERS <br>
+        The Avengers began as a group of extraordinary individuals who were assembled to defeat Loki and his Chitauri army in New York City. Since then, the team has expanded its roster and faced a host of new threats, while dealing with their own turmoil.
+       <img src="img/images.jpg" alt="Hover text stark tower"></article>
+    <nav>The Main Tower is informally known as Avengers Tower, as it serves as the headquarters of the superhero team, the Avengers, similar to the Avengers Mansion. ... Currently, the main Stark Tower is located in Broadway, occupying the space where the Condé Nast Building is in the real world. 
+        <img src="img/Avengers_Tower.png" alt="resident of avengers">
+    </nav>
+    <aside>Loki's Army is a huge force of Frost Giants, Ogres, Trolls, Dark Elves and Asgardian collaborators under Loki's command. Their goal was to conquer all the Nine Realms in Loki's name.
+        <img src="img/loki.jpg" alt="Loki Army">
+    </aside>
+  </div>
+  <footer>The Avengers were first assembled by S.H.I.E.L.D. </footer>
+</body>
