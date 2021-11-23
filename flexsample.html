@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo flexbox</title>
+    <style>
+        body{ padding: 2em;}
+
+    .headercontainer {
+        display: flex;
+        flex-flow: column wrap ;
+        align-content:center ;
+        background: tomato;
+        font-weight:bold;
+        padding: 10px; 
+    }
+    .footercontainer{
+        display: flex;
+        flex-flow: column wrap ;
+        align-content:center ;
+        background:lightgreen;
+        font-weight:bold;
+        padding: 10px; 
+    }
+    .maincontainer{
+        display:flex ;
+        flex-flow:row wrap ;
+        font-weight:bold ;
+        text-align:center ;
+    }
+    .mainContentItem{
+        text-align:left;
+        background: deepskyblue;
+    }
+    .sideBarLeftItem{
+        background: gold;
+    }
+    .sideBarRightItem{
+        background: hotpink;
+    }
+    .article{
+        padding:10px ;
+        margin: 10px;
+        background:aqua ;
+        border: 10px solid blue;
+    }
+
+    .sideBarItem{ flex: 1 0 0;border: 1px solid green; }
+    .mainContentItem{flex: 5 10px;}
+    .mainContentItem{ order: 2;}
+    .sideBarLeftItem{ order: 1;}
+    .sideBarRightItem{order: 3;}
+
+    </style>
+</head>
+<body>
+    <header class="headercontainer"><h1>Header- Sample FlexBox Example</h1></header>
+    <div class="maincontainer">
+        <section class="mainContentItem">
+            <article >
+                <h2>First article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nihil nam eaque!</p>
+            </article>
+            <article>
+                <h2>Second article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestias possimus veniam, facilis at enim accusamus placeat voluptas? Quam illo delectus maxime, provident asperiores numquam in minus reprehenderit sapiente maiores veritatis ad similique distinctio, qui dignissimos temporibus. Odit magnam, nostrum architecto tenetur repellendus voluptas cupiditate?</p>
+            </article>
+            <article>
+                <h2>Third article</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic iure, eum animi cumque similique eius laborum quo. Amet nisi ab earum placeat totam aliquid repellat facere quod perspiciatis ipsa dolores cumque quas praesentium quo quaerat quisquam dignissimos maxime ea vel, iusto et autem magnam esse vero. Saepe impedit suscipit assumenda!!</p>
+            </article>
+        </section>
+        <sidebar class="sideBarItem sideBarLeftItem"><div class="center"></div><p>Left Side Bar</p></sidebar>
+        <sidebar class="sideBarItem sideBarRightItem"><div class="center"></div><p>Right Side Bar</p></sidebar>
+
+    </div>
+    <footer class="footercontainer">
+        footer
+    </footer>
+</body>
+</html>
